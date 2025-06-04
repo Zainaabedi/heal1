@@ -168,6 +168,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: ReportWidget.routeName,
           path: ReportWidget.routePath,
           builder: (context, params) => ReportWidget(),
+        ),
+        FFRoute(
+          name: PersonalDataWidget.routeName,
+          path: PersonalDataWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'PersonalData')
+              : PersonalDataWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
