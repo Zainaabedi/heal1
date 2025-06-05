@@ -143,7 +143,6 @@ class _NavBarPageState extends State<NavBarPage> {
       'progressTracker': ProgressTrackerWidget(),
       'home': HomeWidget(),
       'profileheal': ProfilehealWidget(),
-      'PersonalData': PersonalDataWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -185,18 +184,6 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 32.0,
             ),
             label: 'Home',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outline_rounded,
-              size: 24.0,
-            ),
-            activeIcon: Icon(
-              Icons.person_rounded,
-              size: 32.0,
-            ),
-            label: 'Profile',
             tooltip: '',
           ),
           BottomNavigationBarItem(

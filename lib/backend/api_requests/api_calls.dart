@@ -18,7 +18,7 @@ class GeminiGroup {
       'https://generativelanguage.googleapis.com/v1beta';
   static Map<String, String> headers = {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer AIzaSyBWwfNQDBZcHxw-LrXrazOagGS6XiIiYWg',
+    'Authorization': 'Bearer AIzaSyDEGt9BFxthTChTxeudH-GvDBO7nncWVsU',
   };
   static SendFullPromptCall sendFullPromptCall = SendFullPromptCall();
   static AddImageRecordCall addImageRecordCall = AddImageRecordCall();
@@ -46,7 +46,7 @@ class SendFullPromptCall {
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer AIzaSyBWwfNQDBZcHxw-LrXrazOagGS6XiIiYWg',
+        'Authorization': 'Bearer AIzaSyDEGt9BFxthTChTxeudH-GvDBO7nncWVsU',
       },
       params: {},
       body: ffApiRequestBody,
@@ -92,7 +92,7 @@ class AddImageRecordCall {
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer AIzaSyBWwfNQDBZcHxw-LrXrazOagGS6XiIiYWg',
+        'Authorization': 'Bearer AIzaSyDEGt9BFxthTChTxeudH-GvDBO7nncWVsU',
       },
       params: {
         'photo': photo,

@@ -133,7 +133,7 @@ final parametersBuilderMap =
         },
       ),
   'report': ParameterData.none(),
-  'PersonalData': ParameterData.none(),
+  'profiledetails': ParameterData.none(),
 };
 
 Map<String, dynamic> getInitialParameterData(Map<String, dynamic> data) {

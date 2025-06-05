@@ -4,6 +4,7 @@ import '/components/dropdown_sugar_widget.dart';
 import '/components/medlog_a_widget.dart';
 import '/components/medlog_m_widget.dart';
 import '/components/medlog_n_widget.dart';
+import '/components/notif_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';

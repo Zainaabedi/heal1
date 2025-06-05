@@ -19,5 +19,4 @@ export '/chat_g_p_t_component/chat_ai_screen/chat_ai_screen_widget.dart'
     show ChatAiScreenWidget;
 export '/display/display_widget.dart' show DisplayWidget;
 export '/report/report_widget.dart' show ReportWidget;
-export '/pages/main_pages/personal_data/personal_data_widget.dart'
-    show PersonalDataWidget;
+export '/profiledetails/profiledetails_widget.dart' show ProfiledetailsWidget;
