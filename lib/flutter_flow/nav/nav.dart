@@ -173,7 +173,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: ProfiledetailsWidget.routeName,
           path: ProfiledetailsWidget.routePath,
           builder: (context, params) => ProfiledetailsWidget(),
-        )
+        ),
+        FFRoute(
+            name: HomeCopyWidget.routeName,
+            path: HomeCopyWidget.routePath,
+            builder: (context, params) => NavBarPage(
+                  initialPage: '',
+                  page: HomeCopyWidget(),
+                ))
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 

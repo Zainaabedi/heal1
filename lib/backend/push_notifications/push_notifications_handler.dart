@@ -134,6 +134,7 @@ final parametersBuilderMap =
       ),
   'report': ParameterData.none(),
   'profiledetails': ParameterData.none(),
+  'homeCopy': ParameterData.none(),
 };
 
 Map<String, dynamic> getInitialParameterData(Map<String, dynamic> data) {

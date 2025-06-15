@@ -20,3 +20,4 @@ export '/chat_g_p_t_component/chat_ai_screen/chat_ai_screen_widget.dart'
 export '/display/display_widget.dart' show DisplayWidget;
 export '/report/report_widget.dart' show ReportWidget;
 export '/profiledetails/profiledetails_widget.dart' show ProfiledetailsWidget;
+export '/pages/main_pages/home_copy/home_copy_widget.dart' show HomeCopyWidget;

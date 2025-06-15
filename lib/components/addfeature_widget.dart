@@ -7,18 +7,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'medlog_n_model.dart';
-export 'medlog_n_model.dart';
+import 'addfeature_model.dart';
+export 'addfeature_model.dart';
 
-class MedlogNWidget extends StatefulWidget {
-  const MedlogNWidget({super.key});
+class AddfeatureWidget extends StatefulWidget {
+  const AddfeatureWidget({super.key});
 
   @override
-  State<MedlogNWidget> createState() => _MedlogNWidgetState();
+  State<AddfeatureWidget> createState() => _AddfeatureWidgetState();
 }
 
-class _MedlogNWidgetState extends State<MedlogNWidget> {
-  late MedlogNModel _model;
+class _AddfeatureWidgetState extends State<AddfeatureWidget> {
+  late AddfeatureModel _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -29,7 +29,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => MedlogNModel());
+    _model = createModel(context, () => AddfeatureModel());
   }
 
   @override
@@ -85,7 +85,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Morning Medication',
+                            'Daily Log',
                             textAlign: TextAlign.start,
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
@@ -141,43 +141,6 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Container(
-                                    width: 36.0,
-                                    height: 36.0,
-                                    decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      shape: BoxShape.circle,
-                                    ),
-                                    alignment: AlignmentDirectional(0.0, 0.0),
-                                    child: Text(
-                                      '1',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.poppins(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Colors.white,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ),
                                   Expanded(
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -188,7 +151,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                                             MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            'Moxikind 30',
+                                            'Heart Rate',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -234,7 +197,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                                               .secondaryText,
                                     ),
                                     child: Checkbox(
-                                      value: _model.checkboxValue1 ??= false,
+                                      value: _model.checkboxValue1 ??= true,
                                       onChanged: (newValue) async {
                                         safeSetState(() =>
                                             _model.checkboxValue1 = newValue!);
@@ -284,43 +247,6 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Container(
-                                    width: 36.0,
-                                    height: 36.0,
-                                    decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      shape: BoxShape.circle,
-                                    ),
-                                    alignment: AlignmentDirectional(0.0, 0.0),
-                                    child: Text(
-                                      '1',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.poppins(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Colors.white,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ),
                                   Expanded(
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -331,7 +257,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                                             MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            'Vorlevo M',
+                                            'Oxygen Saturation',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -427,43 +353,6 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Container(
-                                    width: 36.0,
-                                    height: 36.0,
-                                    decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      shape: BoxShape.circle,
-                                    ),
-                                    alignment: AlignmentDirectional(0.0, 0.0),
-                                    child: Text(
-                                      '0.5',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.poppins(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Colors.white,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ),
                                   Expanded(
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -474,7 +363,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                                             MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            'Restyl',
+                                            'Blood Pressure',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -520,7 +409,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                                               .secondaryText,
                                     ),
                                     child: Checkbox(
-                                      value: _model.checkboxValue3 ??= false,
+                                      value: _model.checkboxValue3 ??= true,
                                       onChanged: (newValue) async {
                                         safeSetState(() =>
                                             _model.checkboxValue3 = newValue!);
@@ -570,43 +459,6 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Container(
-                                    width: 36.0,
-                                    height: 36.0,
-                                    decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      shape: BoxShape.circle,
-                                    ),
-                                    alignment: AlignmentDirectional(0.0, 0.0),
-                                    child: Text(
-                                      '1',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.poppins(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Colors.white,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ),
                                   Expanded(
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -617,7 +469,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                                             MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            'PBLac',
+                                            'Blood Sugar levels',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -663,7 +515,7 @@ class _MedlogNWidgetState extends State<MedlogNWidget> {
                                               .secondaryText,
                                     ),
                                     child: Checkbox(
-                                      value: _model.checkboxValue4 ??= false,
+                                      value: _model.checkboxValue4 ??= true,
                                       onChanged: (newValue) async {
                                         safeSetState(() =>
                                             _model.checkboxValue4 = newValue!);

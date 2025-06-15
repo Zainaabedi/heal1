@@ -1,4 +1,3 @@
-import '/components/addfeature_widget.dart';
 import '/components/dropdown_bp_widget.dart';
 import '/components/dropdown_heart_widget.dart';
 import '/components/dropdown_sugar_widget.dart';
@@ -14,7 +13,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:math';
 import 'dart:ui';
 import '/index.dart';
-import 'home_widget.dart' show HomeWidget;
+import 'home_copy_widget.dart' show HomeCopyWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -23,7 +22,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
 
-class HomeModel extends FlutterFlowModel<HomeWidget> {
+class HomeCopyModel extends FlutterFlowModel<HomeCopyWidget> {
   @override
   void initState(BuildContext context) {}
 
